@@ -8,7 +8,7 @@ html {
 body{
    
     font-family: open-sans, sans-serif;
-    color: rgb(47, 47, 47);
+    color: #515151;
     background-color: #fff;
     font-size: 1.2em;
     margin: 0px ;
@@ -47,58 +47,14 @@ body{
     padding-top: 5px;
     margin:0;
     background: #fff;
-     color: rgb(47, 47, 47);
+    color: rgb(47, 47, 47);
     align-items: center;
     justify-content: center;
+    width:100%;
 
 }
-
-@media only screen and (max-width: 600px){
-    .main-nav{
-        font-size: 1em;
-        padding: 0;
-
-    }
-
-}
-ul{
-
-}
-
 li{
     padding: 7px;
-}
-a {
-     color: rgb(47, 47, 47);
-    text-decoration: none;
-}
-ul > .push{
-    
-    margin-left: auto;
-    margin-right: 0px;
-
-
-    padding-right: 0px;
-
-}
-ul > .push3{
-    padding-top: 2px;
-}
-
-
- img{
-    padding-top: 5px;
-    padding-bottom: 7px;
-    width: 70%;
-
-}
-.email{
-  padding-right: 20px;
-  padding-bottom: 15px;
-}
-.cv{
-   padding-bottom: 15px;
-   padding-left: 0px;
 }
 
 
@@ -110,7 +66,63 @@ ul > .push3{
 .logo > img{
     max-width: 70%;
     width: 80px;
-    padding-left:  10px;
+    padding-left:  20px;
+}
+
+ img{
+    padding-top: 5px;
+    padding-bottom: 7px;
+    width: 70%;
+
+}
+
+@media only screen and (max-width: 600px){
+    .main-nav{
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+        width:100%;
+
+    }
+li{
+    padding: 3px;
+}
+.logo > img{
+    max-width: 70%;
+    width: 45px;
+    padding-left:  5px;
+}
+img{
+   width: 60%;
+}
+
+
+}
+
+
+
+a {
+     color: rgb(47, 47, 47);
+    text-decoration: none;
+}
+ul > .push{
+    
+    margin-left: auto;
+    margin-right: 0px;
+    padding-right: 0px;
+
+}
+ul > .push3{
+    padding-top: 2px;
+}
+
+.email{
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+.cv{
+   padding-bottom: 15px;
+   padding-left: 0px;
 }
 
 
@@ -122,49 +134,18 @@ ul > .push3{
     flex-direction: column;
     box-sizing: border-box;
     justify-content: center;
+    background-color: white;
     min-height: 100vh;
+    
+}
 
-}
-.textsize{
-  font-size: 25px;
-}
  a {
   padding-top: 60px;
   text-align: center;
 }
-.me{
-    color: #fff;
-    opacity: 1;
-    margin: 5px auto;
-    text-align: center;
-}
-.porpholioLink{
-  font-weight: bold;
-  color: #10E0BA;
-  font-size:27px;
 
-}
-.title {
-    font-size: 52px;
-    margin: 15px auto;
-    margin-top: 0px;
-    color: rgb(47, 47, 47);
-    font-family: raleway, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-}
-.subTitle{
-    font-size: 25px;
-    color: rgb(47, 47, 47);
-    opacity: 1;
-    margin: 5px auto;
-    margin-bottom: 13px;
-    text-align: center;
-    font-family: open-sans, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
+
+
 #icon{
     opacity: 50%;
 
@@ -181,7 +162,18 @@ ul > .push3{
     display: flex;
     width: 100%;
 }
-
+.cont{
+    width: 85%;
+    display: flex;
+    line-height: 1.65;
+    margin:0px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    height: 0vh;
+    font-size: 1em;
+    
+}
 
 @media(min-width:600px){
 .cont{
@@ -193,30 +185,46 @@ ul > .push3{
     align-items: center;
     padding: 40px 50px;
     height: 0vh;
-    padding-left: 100px;
-    padding-right: 110px;
-    background-color: white;
+    font-size: 1.3em;
+    
 }
 }
+
+.name{
+  font-size: 24px;
+}
+
+.porpholioLink{
+  font-weight: bold;
+  color: #10E0BA;
+  font-size:22px;
+
+}
+
+@media(min-width:600px){
+.porpholioLink{
+  font-weight: bold;
+  color: #10E0BA;
+  font-size:27px;
+
+}
+.name{
+  font-size: 32px;
+}
+
+}
+
+cc
+
+
 .b{
     text-align: center;
     width: 100%;
     padding-bottom: 20px;
 
 }
-.name{
-  font-size: 32px;
-}
-.b > h1{
-    text-align: center;
-    padding-bottom: 0px;
-    color: #383838;
-}
-.b h2{
-  padding: 0px;
-  text-align: center;
-  color: #383838;
-}
+
+
 
 /*projects*****************************/
 .container{
@@ -243,7 +251,8 @@ button {
 }
 button:hover {
   color: white;
-  background: rgb(47, 47, 47);;
+  background: #10E0BA;
+  border: #10E0BA;
 }
 button:active {
   letter-spacing: 2px;
@@ -308,52 +317,72 @@ button:after {
     width: 100%;
     background-color:  #FAF9F9;
 
-
 }
 
+
+.containerC{
+    padding-top: 30px;
+    display: flex;
+    width: 100%;
+    background-color:  #F4F4F4;
+
+}
 .containerB{
     padding-top: 30px;
     padding-bottom: 40px;
     display: flex;
     width: 100%;
-    background-color:  #F2F1F1;
-
-}
-.containerC{
-    padding-top: 30px;
-    display: flex;
-    width: 100%;
-    background-color:  #FAF9F9;
+    background-color:  #EFEEEE;
 
 }
 
+.third{
+  background-color: #FBFBFB; 
 
-
-@media(min-width:800px){
+}
+h1{
+  font-size: 27px;
+  text-align: center;
+  align-items: center;
+   
+}
 .pJbox{
-    
-    
-    
+    text-align: left;
+    padding-left:15px;
+    padding-right: 10px;
+    font-size: 1em;
+  
+}
+@media(min-width:1000px){
+.pJbox{
     line-height: 1.65;
     margin-left: 30px;
     align-items: flex-start;
     display: flex;
-    
+    text-align: left;
     justify-content: center;
-    
-    
+    font-size: 1.1em;
+    padding-left: 0;
 }
+
+h1{
+  font-size: 36px;
+  text-align: center;
+  padding-left: 0px;
+
+}
+
+
+
+
+
 }
 
 .bx1 > img {
     padding-top: 0px;
     width: 100%;
-    flex-shrink: 0;
-
-
-
+    
 }
-
 
 
 .bx{
@@ -365,14 +394,10 @@ button:after {
     margin-bottom: 10px;
     
     width: 100%;
-   
-  
-
 }
 .bx > h1{
     display: flex;
     align-items: flex-start;
-
 }
 
 
@@ -386,40 +411,13 @@ button:after {
 
 }
 
-.bx > h1 {
-    margin-bottom: 20px;
-}
 
 
 /***********2ndBox****************/
 
 
 
-.bx-1{
-
-    flex:1;
-    order:3;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-
-    width: 100%;
-   
-}
-.bx1-1{
-    flex:1;
-    order:4;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-
-    width: 100%;
-
-}
-
-.bx > h1 {
-    margin-bottom: 20px;
-}
-
-
+.
 
 
 /*GRID***********************************/
@@ -448,6 +446,7 @@ button:after {
 
 
 
+}
 
 
 footer {
