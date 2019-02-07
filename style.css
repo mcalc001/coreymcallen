@@ -1,0 +1,461 @@
+/*NAV*/
+
+html { 
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+   
+    font-family: open-sans, sans-serif;
+    color: rgb(47, 47, 47);
+    background-color: #fff;
+    font-size: 1.2em;
+    margin: 0px ;
+    padding: 0px;
+
+}
+* {
+  
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+/*NAV*********************************/
+
+
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main-nav{
+
+    display: flex;
+    padding-top: 2px;
+    list-style: none;
+    font-size: 1.2em;
+    padding-top: 5px;
+    margin:0;
+    background: #fff;
+     color: rgb(47, 47, 47);
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media only screen and (max-width: 600px){
+    .main-nav{
+        font-size: 1em;
+        padding: 0;
+
+    }
+
+}
+ul{
+
+}
+
+li{
+    padding: 7px;
+}
+a {
+     color: rgb(47, 47, 47);
+    text-decoration: none;
+}
+ul > .push{
+    
+    margin-left: auto;
+    margin-right: 0px;
+
+
+    padding-right: 0px;
+
+}
+ul > .push3{
+    padding-top: 2px;
+}
+
+
+ img{
+    padding-top: 5px;
+    padding-bottom: 7px;
+    width: 70%;
+
+}
+.email{
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+.cv{
+   padding-bottom: 15px;
+   padding-left: 0px;
+}
+
+
+.logo {
+   
+    cursor: pointer;
+}
+
+.logo > img{
+    max-width: 70%;
+    width: 80px;
+    padding-left:  10px;
+}
+
+
+
+/*COVER******************************/
+
+.coverContainer{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+.textsize{
+  font-size: 25px;
+}
+ a {
+  padding-top: 60px;
+  text-align: center;
+}
+.me{
+    color: #fff;
+    opacity: 1;
+    margin: 5px auto;
+    text-align: center;
+}
+.porpholioLink{
+  font-weight: bold;
+  color: #10E0BA;
+  font-size:27px;
+
+}
+.title {
+    font-size: 52px;
+    margin: 15px auto;
+    margin-top: 0px;
+    color: rgb(47, 47, 47);
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+.subTitle{
+    font-size: 25px;
+    color: rgb(47, 47, 47);
+    opacity: 1;
+    margin: 5px auto;
+    margin-bottom: 13px;
+    text-align: center;
+    font-family: open-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+#icon{
+    opacity: 50%;
+
+
+}
+
+#icon > img{
+    opacity: 30%;
+    width: 28px;
+}
+
+/******************Aboutme***************************/
+.contaner3{
+    display: flex;
+    width: 100%;
+}
+
+
+@media(min-width:600px){
+.cont{
+    width: 65%;
+    display: flex;
+    line-height: 1.65;
+    margin: 48px auto 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 50px;
+    height: 0vh;
+    padding-left: 100px;
+    padding-right: 110px;
+    background-color: white;
+}
+}
+.b{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+
+}
+.name{
+  font-size: 32px;
+}
+.b > h1{
+    text-align: center;
+    padding-bottom: 0px;
+    color: #383838;
+}
+.b h2{
+  padding: 0px;
+  text-align: center;
+  color: #383838;
+}
+
+/*projects*****************************/
+.container{
+    display: flex;
+}
+
+button {
+
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 150px;
+  border-radius: 40px;
+  background: transparent;
+  border: 2px solid rgb(47, 47, 47);;
+  color: rgb(47, 47, 47);
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: raleway, sans-serif;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+button:hover {
+  color: white;
+  background: rgb(47, 47, 47);;
+}
+button:active {
+  letter-spacing: 2px;
+}
+button:after {
+  content: "Visit site";
+}
+
+.onclic {
+  width: 40px;
+  border-color: #bbbbbb;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #1ecd97;
+  -webkit-animation: rotating 2s 0.25s linear infinite;
+          animation: rotating 2s 0.25s linear infinite;
+}
+.onclic:after {
+  content: "";
+}
+.onclic:hover {
+  color: #1ecd97;
+  
+}
+
+.validate {
+  font-size: 16px;
+  color: white;
+  background: #1ecd97;
+}
+.validate:after {
+ f
+  content: "href="https://face-reg.herokuapp.com"";
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
+.contaner2{
+    padding-top: 30px;
+    display: flex;
+    width: 100%;
+    background-color:  #FAF9F9;
+
+
+}
+
+.containerB{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    width: 100%;
+    background-color:  #F2F1F1;
+
+}
+.containerC{
+    padding-top: 30px;
+    display: flex;
+    width: 100%;
+    background-color:  #FAF9F9;
+
+}
+
+
+
+@media(min-width:800px){
+.pJbox{
+    
+    
+    
+    line-height: 1.65;
+    margin-left: 30px;
+    align-items: flex-start;
+    display: flex;
+    
+    justify-content: center;
+    
+    
+}
+}
+
+.bx1 > img {
+    padding-top: 0px;
+    width: 100%;
+    flex-shrink: 0;
+
+
+
+}
+
+
+
+.bx{
+    padding-top: 20px;
+    padding-left: 5px;
+    flex:1;
+    order:1;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+    width: 100%;
+   
+  
+
+}
+.bx > h1{
+    display: flex;
+    align-items: flex-start;
+
+}
+
+
+.bx1{
+    flex:1;
+    order:2;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+
+
+}
+
+.bx > h1 {
+    margin-bottom: 20px;
+}
+
+
+/***********2ndBox****************/
+
+
+
+.bx-1{
+
+    flex:1;
+    order:3;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+    width: 100%;
+   
+}
+.bx1-1{
+    flex:1;
+    order:4;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+    width: 100%;
+
+}
+
+.bx > h1 {
+    margin-bottom: 20px;
+}
+
+
+
+
+/*GRID***********************************/
+
+
+
+/********************Card*****************************/
+
+
+/*Grid*/
+
+
+
+/************************************?*/
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*************************************/
+
+
+
+
+
+footer {
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(47, 47, 47);
+
+}
+
