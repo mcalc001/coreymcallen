@@ -2,25 +2,26 @@
 
 html { 
   scroll-behavior: smooth;
-  margin: 0px;
+  margin: 0 auto;
   padding: 0px;
+
 }
 body{
-   
-    font-family: open-sans, sans-serif;
+    
+    font-family: open-sans, helvetica, sans-serif;
     color: #515151;
     background-color: #fff;
     font-size: 1.2em;
-    margin: 0px ;
+    margin: 0 auto;
     padding: 0px;
 
 }
 * {
-  margin: 0px ;
+  
   padding: 0;
 }
 
-
+p
 
 
 
@@ -45,7 +46,7 @@ body{
     list-style: none;
     font-size: 1.2em;
     padding-top: 5px;
-    margin:0;
+    margin: 0;
     background: #fff;
     color: rgb(47, 47, 47);
     align-items: center;
@@ -53,6 +54,14 @@ body{
     width:100%;
 
 }
+
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 li{
     padding: 7px;
 }
@@ -78,7 +87,7 @@ li{
 
 @media only screen and (max-width: 600px){
     .main-nav{
-        font-size: 1em;
+      font-size: 1em;
         padding: 0;
         margin: 0;
         width:100%;
@@ -90,12 +99,13 @@ li{
 }
 .logo > img{
     max-width: 70%;
-    width: 45px;
-    padding-left:  5px;
+    width: 65px;
+    padding-left:  15px;
 }
 img{
    width: 60%;
 }
+
 
 
 }
@@ -118,7 +128,7 @@ ul > .push3{
 }
 
 .email{
-  padding-right: 10px;
+  padding-right: 20px;
   padding-bottom: 15px;
 }
 .cv{
@@ -159,21 +169,24 @@ ul > .push3{
 }
 
 /******************Aboutme***************************/
+.textsize{
+  padding-bottom: 0px;
+
+}
 .contaner3{
     display: flex;
     width: 100%;
 }
 .cont{
-    width: 85%;
+
     display: flex;
     line-height: 1.65;
-    margin: 0 ;
     justify-content: center;
+    margin: 0 auto ;
     align-items: center;
     padding: 30px 40px;
-    height: 0vh;
     font-size: 1em;
-    
+    height: 50%;
 }
 
 @media(min-width:600px){
@@ -189,7 +202,12 @@ ul > .push3{
     font-size: 1.3em;
     
 }
+.textsize{
+  padding-bottom:50px;
+
 }
+}
+
 
 .name{
   font-size: 24px;
@@ -215,14 +233,14 @@ ul > .push3{
 
 }
 
-cc
+
 
 
 .b{
     text-align: center;
     width: 100%;
     padding-bottom: 20px;
-
+  
 }
 
 
@@ -230,6 +248,7 @@ cc
 /*projects*****************************/
 .container{
     display: flex;
+    margin: 0px;
 }
 
 button {
@@ -289,27 +308,6 @@ button:after {
   content: "href="https://face-reg.herokuapp.com"";
 }
 
-@-webkit-keyframes rotating {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes rotating {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 
 
 .contaner2{
@@ -350,7 +348,9 @@ h1{
     text-align: left;
     padding-left:15px;
     padding-right: 10px;
+    padding-bottom: 6px;
     font-size: 1em;
+    padding-bottom: 6px;
   
 }
 @media(min-width:1000px){
@@ -362,6 +362,7 @@ h1{
     justify-content: center;
     font-size: 1.1em;
     padding-left: 20px;
+    padding-bottom: 6px;
 }
 
 h1{
@@ -386,11 +387,12 @@ h1{
 
 .bx{
     padding-top: 20px;
-    padding-left: 5px;
+    padding-left: 20px;
     flex:1;
     order:1;
     box-sizing: border-box;
     width: 100%;
+    padding-bottom: 20px;
 }
 .bx > h1{
     display: flex;
