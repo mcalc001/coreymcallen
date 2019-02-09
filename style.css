@@ -25,7 +25,7 @@ p
 
 
 
-
+porpholioLink
 
 
 
@@ -226,14 +226,15 @@ ul > .push3{
   font-weight: bold;
   color: #10E0BA;
   font-size:22px;
-
+  text-decoration: underline;
 }
 
 @media(min-width:600px){
 .porpholioLink{
   font-weight: bold;
   color: #10E0BA;
-  font-size:27px;
+  font-size:28px;
+  text-decoration: underline;
 
 }
 .name{
@@ -257,7 +258,7 @@ ul > .push3{
 /*projects*****************************/
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 0px;
     padding-right: 5px;
 }
@@ -273,7 +274,6 @@ ul > .push3{
 
 
 button {
-
   outline: none;
   height: 40px;
   text-align: center;
@@ -329,7 +329,13 @@ button:after {
   content: "href="https://face-reg.herokuapp.com"";
 }
 
+.fict{
+  font-size: 1em;
+  padding-bottom: 6px; 
+  padding-top: 3px;
+  color: #10E0BA;
 
+}
 
 .contaner2{
     padding-top: 30px;
@@ -392,9 +398,12 @@ h1{
   padding-left: 0px;
 
 }
-
-
-
+.fict{
+  padding-top: 5px;
+  font-size: 1em;
+  padding-bottom: 3px; 
+  color: #10E0BA;
+}
 
 
 }
